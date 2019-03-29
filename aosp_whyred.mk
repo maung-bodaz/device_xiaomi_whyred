@@ -49,7 +49,11 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := "google/coral/coral:10/QQ2A.200501.001.B2/6352890:user/release-keys"
 PLATFORM_SECURITY_PATCH_OVERRIDE := 2020-05-05
 
+# Set this flag in build script
+ifeq ($(CURRENT_BUILD_TYPE), gapps)
 # Use Gapps
+TARGET_SHIPS_SEPERATE_GAPPS_BUILD := true
 WITH_GAPPS := true
 TARGET_GAPPS_ARCH := arm64
 IS_PHONE := true
+endif
