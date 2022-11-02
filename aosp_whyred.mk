@@ -39,7 +39,7 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := whyred
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_NAME := aosp_whyred
-PRODUCT_MODEL := Redmi Note 5 Pro
+PRODUCT_MODEL := Redmi Note 5
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
@@ -48,9 +48,9 @@ TARGET_VENDOR_PRODUCT_NAME := whyred
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="coral-user 10 QQ3A.200805.001 6578210 release-keys"
 
-#Build FP to be picked by both system and vendor
+# Build FP to be picked by both system and vendor
 BUILD_FINGERPRINT := "google/coral/coral:10/QQ3A.200805.001/6578210:user/release-keys"
-PLATFORM_SECURITY_PATCH_OVERRIDE := 2020-08-05
+PLATFORM_SECURITY_PATCH_OVERRIDE := 2022-10-05
 
 # Set this flag in build script
 ifeq ($(CURRENT_BUILD_TYPE), gapps)
